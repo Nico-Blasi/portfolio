@@ -371,3 +371,18 @@ class CreateParticles {
 		return Math.sqrt(Math.pow((x1 - x2), 2) + Math.pow((y1 - y2), 2));
 	}
 }
+
+
+const boton = document.getElementsByClassName ('boton') [0]
+const navLinks = document.getElementsByClassName ('nav-links')[0]
+
+boton.addEventListener('click', () => {
+    navLinks.classList.toggle('active')
+})
+
+const button = document.getElementsByClassName ('button') [0]
+const navLink = document.getElementsByClassName ('nav-link')[0]
+
+button.addEventListener('click', () => {
+    navLink.classList.toggle('active')
+})
