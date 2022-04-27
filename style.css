@@ -1,0 +1,877 @@
+:root {
+    --skills-bar:0%
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Raleway';
+    text-align: center;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* ESTILOS HOME */
+#magic {
+    position: static;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -9999;
+}
+#home {
+    display: none;
+    width: 100%;
+    background-color: black;
+}
+#home-mobil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    text-align: left;
+}
+#home-mobil h1 {
+    font-size: 10vw;
+    color: #fff;
+}
+#home-mobil h1 span {
+    position: relative;
+    color: #000;
+    -webkit-text-stroke: 0.3vw #E5383B;
+}
+#home-mobil h1 span::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #E5383B;
+    -webkit-text-stroke: 0vw #E5383B;
+    border-right: 3px solid #E5383B;
+    overflow: hidden;
+    animation: home-mobil 3s linear backwards;
+}
+@keyframes home-mobil {
+    0% {
+        width: 0%;
+    }
+    70%, 90% {
+        width: 100%;
+    }
+}
+.scroll-down-1 {
+    position: absolute;
+    margin: 50px;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    width: 30px;
+}
+.scroll-down-1::before,
+.scroll-down-1::after {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    border: 2px solid white;
+    height: 10px;
+    width: 10px;
+    transform: translate(-50%, -100%) rotate(45deg);
+    border-top: transparent;
+    border-left: transparent;
+    animation: scroll-down 1s ease infinite;
+}
+.scroll-down-1::after{
+    top: 30%;
+    animation-delay: .3s;
+}
+.scroll-down-2 {
+    position: absolute;
+    margin: 50px;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    width: 30px;
+}
+.scroll-down-2::before,
+.scroll-down-2::after {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    border: 2px solid white;
+    height: 10px;
+    width: 10px;
+    transform: translate(-50%, -100%) rotate(45deg);
+    border-top: transparent;
+    border-left: transparent;
+    animation: scroll-down 1s ease infinite;
+}
+.scroll-down-2::after{
+    top: 30%;
+    animation-delay: .3s;
+}
+@keyframes scroll-down {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        top: 90%;
+    }
+}
+.button-scroll {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin: auto;
+    height: 40px;
+    width: 150px;
+    border: 2px solid #fff;
+    color: #fff;
+    bottom: 0;
+    padding: 9px;
+    margin-bottom: 80px;
+    transition: .3s ease all;
+}
+.button-scroll:hover {
+    background-color: #a4161a;
+    border: 2px solid #a4161a;
+}
+
+/* ESTILO DEL NAV */
+.container-nav {
+    position: relative;
+}
+nav {
+    position: sticky;
+    top: 0;
+}
+nav ul{
+    background-color: #161a1d;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #E5383B;
+}
+nav ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #FDF0D5;
+    font-family: 'Raleway';
+}
+
+/* ESTILOS TEXTOS */
+.title {
+    color: #E5383B;
+    font-size: 25px;
+}
+.subtitle {
+    color: #E5383B;
+    font-size: 20px;
+}
+a {
+    text-decoration: none;
+    color: #E5383B;
+}
+
+/* ESTILO ABOUT */
+#about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#head-about {
+    grid-area: about;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#head-about span {
+    height: 4px;
+    width: 70px;
+    background-color: #E5383B;
+}
+
+#quien-soy {
+    grid-area: quien-soy;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+#quien-soy h2, #quien-soy p {
+    margin: 40px;
+
+}
+.img-me {
+    height: 200px;
+    width: 200px;
+    border: 2px solid rebeccapurple;
+}
+#toolbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-html {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    background-image: url(img/Html5.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.icon-css {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    background-image: url(img/css.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.icon-js {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    background-image: url(img/javascript.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/* ESTILOS SKILLS */
+#my-skills {
+    grid-area: habilidades;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+#head-skills {
+    grid-area: titulo;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text-skills {
+    grid-area: text;
+    width: 60%;
+}
+#head-skills span {
+    height: 4px;
+    width: 70px;
+    background-color: #E5383B;
+}
+#my-skills p {
+    margin: 10px 40px;
+}
+#my-skills span {
+    margin: 5px;
+}
+.container-skill {
+    grid-area: estadistica;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.skill {
+    padding: 10px 0;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.skill-bar, .skill-bar::after {
+    position: relative;
+    width: 200px;
+    height: 15px;
+    background-color: #D3D3D3;
+    overflow: hidden;
+}
+.skill-bar::after {
+    content: '';
+    position: absolute;
+    left: -200px;
+    background-color: #E5383B;
+    transition: .3s;
+    animation: skill-bar-fill 2s ease-in-out forwards;
+}
+.skill-bar--30::after {
+    --skills-bar: 30%;
+}
+.skill-bar--1::after {
+    --skills-bar: 1%;
+}
+@keyframes skill-bar-fill {
+    to {
+        transform: translateX(var(--skills-bar));
+    }
+}
+.box-edu {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background: #fff;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    margin-top: 20px;
+}
+
+.box-edu:hover {
+    transform: translateY(-20px);
+}
+
+.box-edu::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #ff0058, #03a9f4);
+}
+
+.box-edu::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ff0058, #03a9f4);
+    filter: blur(30px);
+}
+
+.box-edu span {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+.info-edu {
+    position: relative;
+    z-index: 3;
+    padding: 20px 30px;
+}
+
+.info-edu h4 {
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.info-edu h5 {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/* ESTILO PORTFOLIO */
+#portfolio {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr;
+}
+#head-projects {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#head-projects span {
+    height: 4px;
+    width: 70px;
+    background-color: #E5383B;
+}
+#ofrezco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    gap: 20px;
+}
+.container-of {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.img-of {
+    height: 70px;
+    width: 80px;
+}
+.img-of img {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* ESTILO CONTACTO */
+#contact {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    background-color: #161A1D;
+}
+#head-contact {
+    margin-top: 50px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#head-contact span {
+    height: 4px;
+    width: 70px;
+    background-color: #E5383B;
+}
+#contact-form {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+#contact-form form * {
+    margin: 0;
+    padding: 1em;
+    background-color: #D3D3D3;
+}
+#contact-form button,
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #E5383B;
+}
+#contact-form button {
+    background-color: #D3D3D3;
+    border: 2px solid #a4161a;
+    text-transform: uppercase;
+    padding: 1em;
+    transition: .3s;
+}
+#contact-form button:hover {
+    background-color: #a4161a;
+    color: #fff;
+}
+
+
+@media (min-width: 1264px) {
+    /* ESTILO HOME */
+    #home-mobil {
+        display: none;
+    }
+    #home {
+        display: block;
+    }
+    /* ESTILO ABOUT */
+    #about {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr;
+        grid-template-areas:
+        "about about"
+        "quien-soy toolbox";
+    }
+    #quien-soy {
+        padding: 0;
+    }
+    #quien-soy p{
+        width: 600px;
+    }
+    .icon-html {
+        margin-bottom: 30px;
+    }
+
+    .icon-css {
+        margin-bottom: 30px;
+    }
+
+    .icon-js {
+        margin-bottom: 30px;
+    }
+
+    /* icono html */
+    .icon-html {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+        background-image: none;
+        -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+    }
+
+    .icon-html:hover {
+        background-image: url(./img/Html5.png);
+        background-size: contain;
+        box-shadow: 0 0 5px #f06529, 0 0 25px #f06529, 0 0 50px #f06529, 0 0 150px #f06529;
+    }
+
+    .icon-html span {
+        position: absolute;
+        display: block;
+    }
+
+    .icon-html span:nth-child(1) {
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 4px;
+        background: linear-gradient(90deg, transparent, #f06529);
+        animation: animate1 1s linear infinite;
+        animation-delay: 0s;
+    }
+
+    @keyframes animate1 {
+        0% {
+            left: -100%;
+        }
+
+        100% {
+            left: 100%;
+        }
+    }
+
+    .icon-html span:nth-child(3) {
+        bottom: 0;
+        left: -100%;
+        width: 100%;
+        height: 4px;
+        background: linear-gradient(90deg, transparent, #f06529);
+        animation: animate3 1s linear infinite;
+        animation-delay: 0s;
+    }
+
+    @keyframes animate3 {
+        0% {
+            left: 100%;
+        }
+
+        100% {
+            left: -100%;
+        }
+    }
+
+    .icon-html span:nth-child(2) {
+        right: 0;
+        top: -100%;
+        width: 4px;
+        height: 100%;
+        background: linear-gradient(180deg, transparent, #f06529);
+        animation: animate2 1s linear infinite;
+        animation-delay: 0.5s;
+    }
+
+    @keyframes animate2 {
+        0% {
+            top: -100%;
+        }
+
+        100% {
+            top: 100%;
+        }
+    }
+
+    .icon-html span:nth-child(4) {
+        left: 0;
+        top: 100%;
+        width: 4px;
+        height: 100%;
+        background: linear-gradient(0deg, transparent, #f06529);
+        animation: animate4 1s linear infinite;
+        animation-delay: 0.5s;
+    }
+
+    @keyframes animate4 {
+        0% {
+            top: 100%;
+        }
+
+        100% {
+            top: -100%;
+        }
+    }
+
+    /* icono css */
+    .icon-css {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+        background-image: none;
+        -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+    }
+
+    .icon-css:hover {
+        background-image: url(./img/css.png);
+        background-size: contain;
+        box-shadow: 0 0 5px #379ad6, 0 0 25px #379ad6, 0 0 50px #379ad6, 0 0 150px #379ad6;
+    }
+
+    .icon-css span {
+        position: absolute;
+        display: block;
+    }
+
+    .icon-css span:nth-child(1) {
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 4px;
+        background: linear-gradient(90deg, transparent, #379ad6);
+        animation: animate1 1s linear infinite;
+        animation-delay: 0s;
+    }
+
+    @keyframes animate1 {
+        0% {
+            left: -100%;
+        }
+
+        100% {
+            left: 100%;
+        }
+    }
+
+    .icon-css span:nth-child(3) {
+        bottom: 0;
+        left: -100%;
+        width: 100%;
+        height: 4px;
+        background: linear-gradient(90deg, transparent, #379ad6);
+        animation: animate3 1s linear infinite;
+        animation-delay: 0s;
+    }
+
+    @keyframes animate3 {
+        0% {
+            left: 100%;
+        }
+
+        100% {
+            left: -100%;
+        }
+    }
+
+    .icon-css span:nth-child(2) {
+        right: 0;
+        top: -100%;
+        width: 4px;
+        height: 100%;
+        background: linear-gradient(180deg, transparent, #379ad6);
+        animation: animate2 1s linear infinite;
+        animation-delay: 0.5s;
+    }
+
+    @keyframes animate2 {
+        0% {
+            top: -100%;
+        }
+
+        100% {
+            top: 100%;
+        }
+    }
+
+    .icon-css span:nth-child(4) {
+        left: 0;
+        top: 100%;
+        width: 4px;
+        height: 100%;
+        background: linear-gradient(0deg, transparent, #379ad6);
+        animation: animate4 1s linear infinite;
+        animation-delay: 0.5s;
+    }
+
+    @keyframes animate4 {
+        0% {
+            top: 100%;
+        }
+
+        100% {
+            top: -100%;
+        }
+    }
+
+    /* icono js */
+    .icon-js {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+        background-image: none;
+        -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+    }
+
+    .icon-js:hover {
+        background-image: url(./img/javascript.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        box-shadow: 0 0 5px #f0db4f, 0 0 25px #f0db4f, 0 0 50px #f0db4f, 0 0 150px #f0db4f;
+    }
+
+    .icon-js span {
+        position: absolute;
+        display: block;
+    }
+
+    .icon-js span:nth-child(1) {
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 4px;
+        background: linear-gradient(90deg, transparent, #f0db4f);
+        animation: animate1 1s linear infinite;
+        animation-delay: 0s;
+    }
+
+    @keyframes animate1 {
+        0% {
+            left: -100%;
+        }
+
+        100% {
+            left: 100%;
+        }
+    }
+
+    .icon-js span:nth-child(3) {
+        bottom: 0;
+        left: -100%;
+        width: 100%;
+        height: 4px;
+        background: linear-gradient(90deg, transparent, #f0db4f);
+        animation: animate3 1s linear infinite;
+        animation-delay: 0s;
+    }
+
+    @keyframes animate3 {
+        0% {
+            left: 100%;
+        }
+
+        100% {
+            left: -100%;
+        }
+    }
+
+    .icon-js span:nth-child(2) {
+        right: 0;
+        top: -100%;
+        width: 4px;
+        height: 100%;
+        background: linear-gradient(180deg, transparent, #f0db4f);
+        animation: animate2 1s linear infinite;
+        animation-delay: 0.5s;
+    }
+
+    @keyframes animate2 {
+        0% {
+            top: -100%;
+        }
+
+        100% {
+            top: 100%;
+        }
+    }
+
+    .icon-js span:nth-child(4) {
+        left: 0;
+        top: 100%;
+        width: 4px;
+        height: 100%;
+        background: linear-gradient(0deg, transparent, #f0db4f);
+        animation: animate4 1s linear infinite;
+        animation-delay: 0.5s;
+    }
+
+    @keyframes animate4 {
+        0% {
+            top: 100%;
+        }
+
+        100% {
+            top: -100%;
+        }
+    }
+
+
+    /* ESTILO MY SKILLS */
+
+    .container-text {
+        grid-area: skills;
+        width: 600px;
+    }
+    .skill-bar, .skill-bar::after {
+        width: 500px;
+    }
+    .skill-bar::after {
+        left: -500px;
+    }
+
+
+    /* ESTILO PROJECTS */
+    #ofrezco {
+        gap: 150px;
+    }
+
+
+    /* ESTILO CONTACTO */
+    #contact-form form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #contact-form form .entero {
+        grid-column: 1/3;
+    }
+}
