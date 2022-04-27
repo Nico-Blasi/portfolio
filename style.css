@@ -261,6 +261,12 @@ p {
     justify-content: center;
     align-items: center;
 }
+#toolbox > div {
+    margin: 20px;
+}
+#toolbox span {
+    padding: 0;
+}
 
 .icon-html {
     position: relative;
