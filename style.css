@@ -22,7 +22,7 @@ html {
     left: 0;
     z-index: -9999;
 }
-#home {
+#home-desktop {
     display: none;
     width: 100%;
     background-color: black;
@@ -545,7 +545,7 @@ p {
     #home-mobil {
         display: none;
     }
-    #home {
+    #home-desktop {
         display: block;
     }
     /* ESTILO NAV */
