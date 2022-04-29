@@ -895,8 +895,6 @@ p {
 
 
     /* ESTILO MY SKILLS */
-    #my-skills {
-    }
     .text-skills {
         display: flex;
         flex-direction: column;
