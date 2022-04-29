@@ -215,11 +215,9 @@ p {
 
 /* ESTILO ABOUT */
 #about {
-    width: 100%;
     min-height: 100vh;
+    padding-top: 45px !important;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(29,29,29,1) 10%, rgba(29,29,29,1) 100%);
 }
@@ -244,7 +242,6 @@ p {
 }
 
 #quien-soy {
-    grid-area: quien-soy;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -301,17 +298,12 @@ p {
 
 /* ESTILOS SKILLS */
 #my-skills {
-    grid-area: habilidades;
-    display: flex;
     min-height: 100vh;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding-top: 45px !important;
     padding: 20px;
     background-color: #1d1d1d;
 }
 #head-skills {
-    grid-area: titulo;
     display: flex;
     gap: 15px;
     flex-direction: column;
@@ -324,7 +316,6 @@ p {
     background-color: #E5383B;
 }
 .text-skills p{
-    grid-area: text;
     width: 80vw;
     margin: 15px;
 }
@@ -333,8 +324,6 @@ p {
     color: #fff;
 }
 .container-skill {
-    grid-area: skills;
-    margin: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -374,7 +363,6 @@ p {
     }
 }
 .box-edu {
-    grid-area: box-edu;
     position: relative;
     width: 250px;
     height: 250px;
@@ -443,6 +431,7 @@ p {
 
 /* ESTILO PORTFOLIO */
 #portfolio {
+    padding-top: 45px !important;
     width: 100%;
     padding: 20px;
     min-height: 100vh;
@@ -503,9 +492,8 @@ p {
 
 /* ESTILO CONTACTO */
 #contact {
-    width: 100%;
-    padding: 20px 0;
     min-height: 100vh;
+    padding-top: 45px !important;
     background-color: #1d1d1d;
 }
 #head-contact {
@@ -579,15 +567,6 @@ p {
         color: #fff;
     }
     /* ESTILO ABOUT */
-    #about {
-        height: 100vh;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.5fr 1fr;
-        grid-template-areas:
-        "about about"
-        "quien-soy toolbox";
-    }
     #quien-soy {
         padding: 0;
     }
@@ -917,12 +896,6 @@ p {
 
     /* ESTILO MY SKILLS */
     #my-skills {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        'titulo titulo'
-        'text skills'
-        'footer footer';
     }
     .text-skills {
         display: flex;
@@ -937,9 +910,6 @@ p {
     }
     .skill-bar::after {
         left: -500px;
-    }
-    footer {
-        grid-area: footer;
     }
 
 
