@@ -312,6 +312,12 @@ p {
     width: 70px;
     background-color: #E5383B;
 }
+.text-skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .text-skills p{
     width: 80vw;
     margin: 15px;
@@ -508,7 +514,7 @@ p {
     display: flex;
     justify-content: center;
     text-align: left;
-    margin: 50px 0;
+    margin: 30px 0;
 }
 #contact-form form * {
     margin: 0;
@@ -545,12 +551,17 @@ p {
     align-items: center;
 }
 #redes li {
+    display: block;
     list-style: none;
     cursor: pointer;
-    transition: .3;
+    transition: .5s;
 }
 #redes li a {
     text-decoration: none;
+    font-size: 1.5rem;
+}
+#redes li:hover {
+    transform: rotateY(180deg);
 }
 
 
