@@ -348,7 +348,6 @@ p {
     position: absolute;
     left: -200px;
     background-color: #E5383B;
-    transition: .3s;
     animation: skill-bar-fill 2s ease-in-out forwards;
 }
 .skill-bar--30::after {
