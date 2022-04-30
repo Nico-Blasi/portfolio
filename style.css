@@ -192,9 +192,6 @@ nav {
     display: flex;
 }
 
-
-
-
 /* ESTILOS TEXTOS */
 .title {
     color: #E5383B;
@@ -538,6 +535,24 @@ p {
     background-color: #a4161a;
     color: #fff;
 }
+/* ESTILO REDES DEL FOOTER */
+#redes * {
+    padding: 5px;
+}
+#redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#redes li {
+    list-style: none;
+    cursor: pointer;
+    transition: .3;
+}
+#redes li a {
+    text-decoration: none;
+}
+
 
 
 @media (min-width: 1264px) {
