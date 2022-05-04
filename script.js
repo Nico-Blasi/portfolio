@@ -384,12 +384,12 @@ button.addEventListener('click', () => {
 // ANIMACION DE TITULOS
 ScrollReveal().reveal('.title', { duration: 1500, origin: 'bottom', distance: '-100px' })
 // ANIMACION DE ABOUT
-ScrollReveal().reveal('#quien-soy', {delay:500, duration: 1500, origin: 'left', distance: '100px' })
-ScrollReveal().reveal('#toolbox', {delay:500, duration: 1500, origin: 'rigth', distance: '100px' })
+ScrollReveal().reveal('#quien-soy', {delay:500, duration: 1500, origin: 'bottom', distance: '-100px' })
+ScrollReveal().reveal('#toolbox', {delay:500, duration: 1500, origin: 'bottom', distance: '-100px' })
 // ANIMACION DE MY SKIILS
-ScrollReveal().reveal('.text-skills', {delay:500, duration: 1500, origin: 'left', distance: '100px' })
-ScrollReveal().reveal('.container-skill', {delay:500, duration: 1500, origin: 'rigth', distance: '100px' })
-ScrollReveal().reveal('box-edu', {delay:500, duration: 1500, origin: 'rigth', distance: '100px' })
+ScrollReveal().reveal('.text-skills', {delay:500, duration: 1500, origin: 'bottom', distance: '-100px' })
+ScrollReveal().reveal('.container-skill', {delay:500, duration: 1500, origin: 'bottom', distance: '-100px' })
+ScrollReveal().reveal('box-edu', {delay:500, duration: 1500, origin: 'bottom', distance: '-100px' })
 // ANIMACION DE PORTFOLIO
 ScrollReveal().reveal('#ofrezco', {delay:150, duration: 1500, origin: 'bottom', distance: '-100px' })
 ScrollReveal().reveal('.card', {delay:200, duration: 1500, origin: 'bottom', distance: '-100px' })

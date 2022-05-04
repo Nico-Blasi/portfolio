@@ -9,10 +9,10 @@
 body {
     font-family: 'Raleway';
     text-align: center;
-    overflow-x: hidden;
 }
 html {
     scroll-behavior: smooth;
+
 }
 /* ESTILOS HOME */
 #magic {
