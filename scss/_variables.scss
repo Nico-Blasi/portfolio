@@ -1,0 +1,32 @@
+:root {
+    --skills-bar:0%
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Raleway';
+    text-align: center;
+}
+html {
+    scroll-behavior: smooth;
+
+}
+.title {
+    color: #E5383B;
+    font-size: 25px;
+}
+.subtitle {
+    color: #E5383B;
+    font-size: 20px;
+}
+a {
+    text-decoration: none;
+    color: #E5383B;
+}
+p {
+    color: #fff;
+    margin: 0;
+}

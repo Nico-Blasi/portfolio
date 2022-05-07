@@ -1,0 +1,350 @@
+@media screen and (min-width: 1264px) {
+    /* ESTILO HOME */
+    #home-mobil {
+        display: none;
+    }
+    #home-desktop {
+        display: block;
+    }
+    /* ESTILO NAV */
+    nav {
+        .mobil-menu {
+            display: none;
+        }
+        .desktop-menu {
+            display: block;
+            ul {
+                margin: 20px;
+                li {
+                    display: inline;
+                    padding: 0 2%;
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    /* ESTILO ABOUT */
+    #about {
+        #quien-soy {
+            padding: 0;
+            p{
+                width: 600px;
+            }
+        }
+        #toolbox {
+            display: flex;
+            flex-direction: row;
+            .icon-html {
+                margin-bottom: 30px;
+                position: relative;
+                width: 150px;
+                height: 150px;
+                overflow: hidden;
+                background-image: none;
+                -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+                &:hover {
+                    background-image: url(../img/Html5.png);
+                    background-size: contain;
+                    box-shadow: 0 0 5px #f06529, 0 0 25px #f06529, 0 0 50px #f06529, 0 0 150px #f06529;
+                }
+                span {
+                    position: absolute;
+                    display: block;
+                    &:nth-child(1) {
+                        top: 0;
+                        left: -100%;
+                        width: 100%;
+                        height: 4px;
+                        background: linear-gradient(90deg, transparent, #f06529);
+                        animation: animate1 1s linear infinite;
+                        animation-delay: 0s;
+                        @keyframes animate1 {
+                            0% {
+                                left: -100%;
+                            }
+                    
+                            100% {
+                                left: 100%;
+                            }
+                        }
+                    }
+                    &:nth-child(3) {
+                        bottom: 0;
+                        left: -100%;
+                        width: 100%;
+                        height: 4px;
+                        background: linear-gradient(90deg, transparent, #f06529);
+                        animation: animate3 1s linear infinite;
+                        animation-delay: 0s;
+                        @keyframes animate3 {
+                            0% {
+                                left: 100%;
+                            }
+                    
+                            100% {
+                                left: -100%;
+                            }
+                        }
+                    }
+                    &:nth-child(2) {
+                        right: 0;
+                        top: -100%;
+                        width: 4px;
+                        height: 100%;
+                        background: linear-gradient(180deg, transparent, #f06529);
+                        animation: animate2 1s linear infinite;
+                        animation-delay: 0.5s;
+                        @keyframes animate2 {
+                            0% {
+                                top: -100%;
+                            }
+                    
+                            100% {
+                                top: 100%;
+                            }
+                        }
+                    
+                    }
+                    &:nth-child(4) {
+                        left: 0;
+                        top: 100%;
+                        width: 4px;
+                        height: 100%;
+                        background: linear-gradient(0deg, transparent, #f06529);
+                        animation: animate4 1s linear infinite;
+                        animation-delay: 0.5s;
+                        @keyframes animate4 {
+                            0% {
+                                top: 100%;
+                            }
+                    
+                            100% {
+                                top: -100%;
+                            }
+                        }
+                    }
+                }
+            }
+            .icon-css {
+                margin-bottom: 30px;
+                position: relative;
+                width: 150px;
+                height: 150px;
+                overflow: hidden;
+                background-image: none;
+                -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+                &:hover {
+                    background-image: url(../img/css.png);
+                    background-size: contain;
+                    box-shadow: 0 0 5px #379ad6, 0 0 25px #379ad6, 0 0 50px #379ad6, 0 0 150px #379ad6;
+                }
+                span {
+                    position: absolute;
+                    display: block;
+                    &:nth-child(1) {
+                        top: 0;
+                        left: -100%;
+                        width: 100%;
+                        height: 4px;
+                        background: linear-gradient(90deg, transparent, #379ad6);
+                        animation: animate1 1s linear infinite;
+                        animation-delay: 0s;
+                        @keyframes animate1 {
+                            0% {
+                                left: -100%;
+                            }
+                    
+                            100% {
+                                left: 100%;
+                            }
+                        }
+                    }
+                    &:nth-child(3) {
+                        bottom: 0;
+                        left: -100%;
+                        width: 100%;
+                        height: 4px;
+                        background: linear-gradient(90deg, transparent, #379ad6);
+                        animation: animate3 1s linear infinite;
+                        animation-delay: 0s;
+                        @keyframes animate3 {
+                            0% {
+                                left: 100%;
+                            }
+                    
+                            100% {
+                                left: -100%;
+                            }
+                        }
+                    }
+                    &:nth-child(2) {
+                        right: 0;
+                        top: -100%;
+                        width: 4px;
+                        height: 100%;
+                        background: linear-gradient(180deg, transparent, #379ad6);
+                        animation: animate2 1s linear infinite;
+                        animation-delay: 0.5s;
+                        @keyframes animate2 {
+                            0% {
+                                top: -100%;
+                            }
+                    
+                            100% {
+                                top: 100%;
+                            }
+                        }
+                    }
+                    &:nth-child(4) {
+                        left: 0;
+                        top: 100%;
+                        width: 4px;
+                        height: 100%;
+                        background: linear-gradient(0deg, transparent, #379ad6);
+                        animation: animate4 1s linear infinite;
+                        animation-delay: 0.5s;
+                        @keyframes animate4 {
+                            0% {
+                                top: 100%;
+                            }
+                    
+                            100% {
+                                top: -100%;
+                            }
+                        }
+                    }
+                }
+            }
+            .icon-js {
+                margin-bottom: 30px;
+                position: relative;
+                width: 150px;
+                height: 150px;
+                overflow: hidden;
+                background-image: none;
+                -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+                &:hover {
+                    background-image: url(../img/javascript.png);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    box-shadow: 0 0 5px #f0db4f, 0 0 25px #f0db4f, 0 0 50px #f0db4f, 0 0 150px #f0db4f;
+                }
+                span {
+                    position: absolute;
+                    display: block;
+                    &:nth-child(1) {
+                        top: 0;
+                        left: -100%;
+                        width: 100%;
+                        height: 4px;
+                        background: linear-gradient(90deg, transparent, #f0db4f);
+                        animation: animate1 1s linear infinite;
+                        animation-delay: 0s;
+                        @keyframes animate1 {
+                            0% {
+                                left: -100%;
+                            }
+                    
+                            100% {
+                                left: 100%;
+                            }
+                        }
+                    }
+                    &:nth-child(3) {
+                        bottom: 0;
+                        left: -100%;
+                        width: 100%;
+                        height: 4px;
+                        background: linear-gradient(90deg, transparent, #f0db4f);
+                        animation: animate3 1s linear infinite;
+                        animation-delay: 0s;
+                        @keyframes animate3 {
+                            0% {
+                                left: 100%;
+                            }
+                    
+                            100% {
+                                left: -100%;
+                            }
+                        }
+                    }
+                    &:nth-child(2) {
+                        right: 0;
+                        top: -100%;
+                        width: 4px;
+                        height: 100%;
+                        background: linear-gradient(180deg, transparent, #f0db4f);
+                        animation: animate2 1s linear infinite;
+                        animation-delay: 0.5s;
+                        @keyframes animate2 {
+                            0% {
+                                top: -100%;
+                            }
+                    
+                            100% {
+                                top: 100%;
+                            }
+                        }
+                    }
+                    &:nth-child(4) {
+                        left: 0;
+                        top: 100%;
+                        width: 4px;
+                        height: 100%;
+                        background: linear-gradient(0deg, transparent, #f0db4f);
+                        animation: animate4 1s linear infinite;
+                        animation-delay: 0.5s;
+                        @keyframes animate4 {
+                            0% {
+                                top: 100%;
+                            }
+                    
+                            100% {
+                                top: -100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    /* ESTILO MY SKILLS */
+    .text-skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .text-skills p{
+        width: 500px;
+    }
+    .skill-bar, .skill-bar::after {
+        width: 500px;
+    }
+    .skill-bar::after {
+        left: -500px;
+    }
+
+
+    /* ESTILO PROJECTS */
+    #ofrezco {
+        gap: 150px;
+    }
+
+
+    /* ESTILO CONTACTO */
+    #contact {
+        #contact-form {
+            form {
+                width: 60%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                .entero {
+                    grid-column: 1/3;
+                }
+            }
+        } 
+    }
+}

@@ -1,0 +1,58 @@
+#portfolio {
+    padding-top: 45px !important;
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    background-color: #1d1d1d;
+}
+#head-projects {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#head-projects span {
+    height: 4px;
+    width: 70px;
+    background-color: #E5383B;
+}
+#ofrezco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    gap: 20px;
+}
+.container-of {
+    height: 250px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.img-of {
+    height: 70px;
+    width: 80px;
+}
+.img-of img {
+    height: 100%;
+    width: 100%;
+}
+.card {
+    background-color: #2d2d2d;
+}
+.card-title {
+    color: #fff;
+}
+.btn-primary {
+    background-color: #2d2d2d;
+    border-color: #E5383B;
+}
+.btn-primary:hover {
+    background-color: #E5383B;
+    border-color: #E5383B;
+}
