@@ -6,6 +6,7 @@
     #home-desktop {
         display: block;
     }
+
     /* ESTILO NAV */
     nav {
         .mobil-menu {
@@ -25,6 +26,7 @@
             }
         }
     }
+
     /* ESTILO ABOUT */
     #about {
         #quien-soy {
@@ -321,21 +323,25 @@
                 width: 500px;
             }
         }
-        .text-skills 
-        .skill-bar {
-            width: 500px;
-            &::after {
-                width: 500px;
-                left: -500px;
+        .container-skill {
+            .skill {
+                .skill-bar {
+                    width: 500px;
+                    &::after {
+                        width: 500px;
+                        left: -500px;
+                    }
+                } 
             }
-        }    
+        }
     }
 
     /* ESTILO PROJECTS */
-    #ofrezco {
-        gap: 150px;
+    #porfolio {
+        #ofrezco {
+            gap: 150px;
+        }
     }
-
 
     /* ESTILO CONTACTO */
     #contact {

@@ -9,63 +9,42 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-#head-contact span {
-    height: 4px;
-    width: 70px;
-    background-color: #E5383B;
+    span {
+        height: 4px;
+        width: 70px;
+        background-color: #E5383B;
+    }
 }
 #contact-form {
     display: flex;
     justify-content: center;
     text-align: left;
     margin: 30px 0;
+    form {
+        * {
+            margin: 0;
+            padding: 1em;
+            background-color: #2d2d2d;
+            color: #fff
+        }
+    }
+    button, input, textarea {
+        width: 100%;
+        padding: .7em;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #E5383B;
+    }
+    button {
+        background-color: #2d2d2d;
+        border: 2px solid #a4161a;
+        text-transform: uppercase;
+        color: #000;
+        padding: 1em;
+        transition: .3s;
+        &:hover {
+            background-color: #a4161a;
+            color: #fff;
+        }
+    }
 }
-#contact-form form * {
-    margin: 0;
-    padding: 1em;
-    background-color: #2d2d2d;
-}
-#contact-form button,
-#contact-form input,
-#contact-form textarea {
-    width: 100%;
-    padding: .7em;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid #E5383B;
-}
-#contact-form button {
-    background-color: #2d2d2d;
-    border: 2px solid #a4161a;
-    text-transform: uppercase;
-    padding: 1em;
-    transition: .3s;
-}
-#contact-form button:hover {
-    background-color: #a4161a;
-    color: #fff;
-}
-/* ESTILO REDES DEL FOOTER */
-#redes * {
-    padding: 5px;
-}
-#redes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#redes li {
-    display: block;
-    list-style: none;
-    cursor: pointer;
-    transition: .5s;
-}
-#redes li a {
-    text-decoration: none;
-    font-size: 1.5rem;
-}
-#redes li:hover {
-    transform: rotateY(180deg);
-}
-
