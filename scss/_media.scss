@@ -312,21 +312,24 @@
     }
     
     /* ESTILO MY SKILLS */
-    .text-skills {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    #my-skills {
+        .text-skills {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p{
+                width: 500px;
+            }
+        }
+        .text-skills 
+        .skill-bar {
+            width: 500px;
+            &::after {
+                width: 500px;
+                left: -500px;
+            }
+        }    
     }
-    .text-skills p{
-        width: 500px;
-    }
-    .skill-bar, .skill-bar::after {
-        width: 500px;
-    }
-    .skill-bar::after {
-        left: -500px;
-    }
-
 
     /* ESTILO PROJECTS */
     #ofrezco {
