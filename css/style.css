@@ -467,11 +467,19 @@ footer #redes {
     list-style: none;
     cursor: pointer;
     transition: .5s; }
+    footer #redes li:hover {
+      transform: rotateY(180deg); }
     footer #redes li a {
       text-decoration: none;
       font-size: 1.5rem; }
-    footer #redes li:hover {
-      transform: rotateY(180deg); }
+      footer #redes li a .fa-instagram {
+        color: #c32aa3; }
+      footer #redes li a .fa-facebook {
+        color: #1877f2; }
+      footer #redes li a .fa-github {
+        color: #fff; }
+      footer #redes li a .fa-linkedin {
+        color: #0077b5; }
 
 @media screen and (min-width: 1264px) {
   /* ESTILO HOME */
