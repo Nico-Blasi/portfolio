@@ -25,7 +25,7 @@
         span {
             position: relative;
             color: #000;
-            -webkit-text-stroke: 0.3vw #E5383B;
+            -webkit-text-stroke: 0.3vw $primary-color;
             &::before {
                 content: attr(data-text);
                 position: absolute;
@@ -33,9 +33,9 @@
                 left: 0;
                 width: 100%;
                 height: 100%;
-                color: #E5383B;
-                -webkit-text-stroke: 0vw #E5383B;
-                border-right: 3px solid #E5383B;
+                color: $primary-color;
+                -webkit-text-stroke: 0vw $primary-color;
+                border-right: 3px solid $primary-color;
                 overflow: hidden;
                 animation: home-mobil 3s linear backwards;
             }

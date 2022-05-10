@@ -12,7 +12,7 @@
         span {
             height: 4px;
             width: 70px;
-            background-color: #E5383B;
+            background-color: $primary-color;
         }
     }
     span {
@@ -51,7 +51,7 @@
                     height: 15px;
                     position: absolute;
                     left: -200px;
-                    background-color: #E5383B;
+                    background-color: $primary-color;
                     animation: skill-bar-fill 2s ease-in-out forwards;
                 }
             }

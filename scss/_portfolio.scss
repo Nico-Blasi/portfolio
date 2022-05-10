@@ -13,7 +13,7 @@
         span {
             height: 4px;
             width: 70px;
-            background-color: #E5383B;
+            background-color: $primary-color;
         }
     }
     #ofrezco {
@@ -48,10 +48,10 @@
         }
         .btn-primary {
             background-color: #2d2d2d;
-            border-color: #E5383B;
+            border-color: $primary-color;
             &:hover {
-                background-color: #E5383B;
-                border-color: #E5383B;
+                background-color: $primary-color;
+                border-color: $primary-color;
             }
         }
     }

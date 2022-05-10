@@ -15,17 +15,20 @@ html {
 
 }
 .title {
-    color: #E5383B;
+    color: $primary-color;
     font-size: 25px;
 }
 .subtitle {
-    color: #E5383B;
+    color: $primary-color;
     font-size: 20px;
 }
 a {
     text-decoration: none;
-    color: #E5383B;
+    color: $primary-color;
 }
 p {
     color: #fff;
 }
+
+
+$primary-color: #E5383B;
