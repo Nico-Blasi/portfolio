@@ -1,14 +1,8 @@
 #my-skills {
-    min-height: 100vh;
-    padding-top: 45px !important;
+    @extend .page;
     padding: 20px;
-    background-color: #1d1d1d;
     #head-skills {
-        display: flex;
-        gap: 15px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include head;
         span {
             height: 4px;
             width: 70px;

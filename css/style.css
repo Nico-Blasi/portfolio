@@ -29,6 +29,23 @@ a {
 p {
   color: #fff; }
 
+.red-instagram {
+  color: #c32aa3; }
+
+.red-facebook {
+  color: #1877f2; }
+
+.red-github {
+  color: #fff; }
+
+.red-linkedin {
+  color: #0077b5; }
+
+.page, #about, #my-skills, #portfolio, #contact {
+  min-height: 100vh;
+  padding-top: 45px !important;
+  background-color: #1d1d1d; }
+
 nav {
   position: fixed;
   text-align: center;
@@ -185,22 +202,15 @@ nav {
     top: 90%; } }
 
 #about {
-  min-height: 100vh;
-  padding-top: 45px !important;
   padding: 20px;
   background: black;
   background: linear-gradient(180deg, black 0%, #1d1d1d 10%, #1d1d1d 100%); }
-  #about * {
-    padding: 20px; }
   #about #head-about {
-    grid-area: about;
     display: flex;
     gap: 15px;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    #about #head-about * {
-      padding: 0; }
     #about #head-about span {
       height: 4px;
       width: 70px;
@@ -256,10 +266,7 @@ nav {
       background-repeat: no-repeat; }
 
 #my-skills {
-  min-height: 100vh;
-  padding-top: 45px !important;
-  padding: 20px;
-  background-color: #1d1d1d; }
+  padding: 20px; }
   #my-skills #head-skills {
     display: flex;
     gap: 15px;
@@ -366,11 +373,8 @@ nav {
         font-weight: 300; }
 
 #portfolio {
-  padding-top: 45px !important;
   width: 100%;
-  padding: 20px;
-  min-height: 100vh;
-  background-color: #1d1d1d; }
+  padding: 20px; }
   #portfolio #head-projects {
     display: flex;
     gap: 15px;
@@ -412,11 +416,6 @@ nav {
       #portfolio .card .btn-primary:hover {
         background-color: #E5383B;
         border-color: #E5383B; }
-
-#contact {
-  min-height: 100vh;
-  padding-top: 45px !important;
-  background-color: #1d1d1d; }
 
 #head-contact {
   display: flex;
@@ -472,14 +471,6 @@ footer #redes {
     footer #redes li a {
       text-decoration: none;
       font-size: 1.5rem; }
-      footer #redes li a .fa-instagram {
-        color: #c32aa3; }
-      footer #redes li a .fa-facebook {
-        color: #1877f2; }
-      footer #redes li a .fa-github {
-        color: #fff; }
-      footer #redes li a .fa-linkedin {
-        color: #0077b5; }
 
 @media screen and (min-width: 1264px) {
   /* ESTILO HOME */

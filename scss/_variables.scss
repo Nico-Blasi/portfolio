@@ -31,3 +31,32 @@ a {
 p {
     color: #fff;
 }
+
+//mapa redes
+$redes: (
+    instagram: #c32aa3,
+    facebook: #1877f2,
+    github: #fff,
+    linkedin: #0077b5,
+);
+@each $red, $color in $redes {
+    .red-#{$red}{
+        color: $color;
+    }
+}
+
+//mixin
+@mixin head {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+//extend
+.page {
+    min-height: 100vh;
+    padding-top: 45px !important;
+    background-color: #1d1d1d;
+}

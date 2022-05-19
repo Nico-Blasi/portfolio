@@ -1,15 +1,9 @@
 #portfolio {
-    padding-top: 45px !important;
+    @extend .page;
     width: 100%;
     padding: 20px;
-    min-height: 100vh;
-    background-color: #1d1d1d;
     #head-projects {
-        display: flex;
-        gap: 15px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include head;
         span {
             height: 4px;
             width: 70px;
