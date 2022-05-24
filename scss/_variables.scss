@@ -33,13 +33,13 @@ p {
 }
 
 //mapa redes
-$redes: (
+$social: (
     instagram: #c32aa3,
     facebook: #1877f2,
     github: #fff,
     linkedin: #0077b5,
 );
-@each $red, $color in $redes {
+@each $red, $color in $social {
     .red-#{$red}{
         color: $color;
     }
