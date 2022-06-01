@@ -472,6 +472,9 @@ footer #redes {
       text-decoration: none;
       font-size: 1.5rem; }
 
+footer p {
+  margin: 0; }
+
 @media screen and (min-width: 1264px) {
   /* ESTILO HOME */
   #home-mobil {
